@@ -1,0 +1,57 @@
+
+chmod 400 /Users/jayurbain/Dropbox/AWS_key_pairs/aws_keypair_06182018.pem
+
+ssh -i /Users/jayurbain/Dropbox/AWS_key_pairs/aws_keypair_06182018.pem ubuntu@ec2-34-239-123-168.compute-1.amazonaws.com
+
+Bot name: JayBot
+Username: jayurbainbot
+517075698:AAFXuQdW8xGLXUXa_qJOcJK8TDuyLBcCpPE
+
+$ scp -r -i /Users/jayurbain/Dropbox/AWS_key_pairs/aws_keypair_06182018.pem project ubuntu@ec2-34-239-123-168.compute-1.amazonaws.com:~/.
+
+scp -i /Users/jayurbain/Dropbox/AWS_key_pairs/aws_keypair_06182018.pem project/dialogue_manager.py ubuntu@ec2-34-239-123-168.compute-1.amazonaws.com:~/.
+
+sudo apt-get install tmux 
+tmux new -s my_awesome_session
+# you live here
+tmux detach
+
+tmux attach -t my_awesome_session
+# you come back here tomorrow
+
+detach: ctrl+b d
+
+sudo docker run -it -p 8080:8080 -v $PWD:/home/ubuntu/project akashin/coursera-aml-nlp
+
+python main_bot.py --token '517075698:AAFXuQdW8xGLXUXa_qJOcJK8TDuyLBcCpPE'
+
+#######
+
+You can access my Stack Overflow Telegram Bot at @jxhsebot
+PLEASE, if the bot is down or you want to ask any questions, ping me via Telegram at @jabdov
+Bonus conversational features:
+1) The chitchat bot has been trained to respond "what is your name" with its name. Other chitchat questions are responded from training with default English corpus. Some answers may look weird
+2) For chitchat questions with low confidence matching, the LowConfidenceAdapter is used with threshold 0.5 and default response "I am sorry, but I do not understand." This has been done to reduce the number of weird answers to some questions which are very different from the training corpus.
+
+#######
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
